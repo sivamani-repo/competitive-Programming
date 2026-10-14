@@ -33,8 +33,9 @@ public:
 
 int main() {
     Solution obj;
-    int n = 5;
+    int n ;
+    cin>>n;
     cout << "Ways = "
-         << obj.climbStairs(n);
+         << obj.climbStairs(n)<<endl;
     return 0;
 }

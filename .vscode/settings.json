@@ -1,0 +1,25 @@
+{
+    "terminal.integrated.cwd": "${fileDirname}",
+    "terminal.integrated.defaultProfile.windows": "C++ Competitive Programming",
+    "terminal.integrated.enablePersistentSessions": true,
+    "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose",
+    "terminal.integrated.shellIntegration.enabled": false,
+    "terminal.integrated.tabs.enabled": false,
+    "terminal.integrated.fontFamily": "Consolas",
+    "workbench.colorCustomizations": {
+        "terminal.background": "#000000",
+        "terminal.foreground": "#D4D4D4",
+        "terminalCursor.foreground": "#FFFFFF"
+    },
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.showExecutionMessage": false,
+    "code-runner.showRunIconInEditorTitleMenu": false,
+    "code-runner.executorMap": {
+        "cpp": "g++ -std=c++17 -O2 \"$fullFileName\" -o \"$dir\\$fileNameWithoutExt.exe\" && \"$dir\\$fileNameWithoutExt.exe\""
+    },
+    "accessibility.signals.terminalBell": {
+        "sound": "off"
+    },
+    "terminal.integrated.enableVisualBell": false
+}

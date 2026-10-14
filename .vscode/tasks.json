@@ -1,0 +1,53 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C++: Build Active File",
+            "type": "process",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-O2",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": "$gcc",
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        {
+            "label": "C++: Run Active File",
+            "type": "process",
+            "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "dependsOn": "C++: Build Active File",
+            "dependsOrder": "sequence",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        }
+    ]
+}
