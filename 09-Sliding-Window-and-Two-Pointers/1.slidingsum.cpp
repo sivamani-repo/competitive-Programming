@@ -10,7 +10,7 @@ int main()
   int a, b, c;
   cin >> x[0] >> a >> b >> c;
   for (int i = 1; i < n; i++)
-    x[i] = (a * x[i - 1] + b) % 11;
+    x[i] = (a * x[i - 1] + b) % ;
   int sum = 0;
   int i = 0;
   while (i < k) {
